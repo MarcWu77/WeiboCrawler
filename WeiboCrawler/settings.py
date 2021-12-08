@@ -16,7 +16,7 @@ NEWSPIDER_MODULE = 'WeiboCrawler.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
-USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36'
+USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
@@ -45,9 +45,9 @@ DEFAULT_REQUEST_HEADERS = {
     'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6,ja;q=0.4,zh-TW;q=0.2,mt;q=0.2',
     'Connection': 'keep-alive',
     'Host': 'm.weibo.cn',
-    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 11_3_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36',
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.55 Safari/537.36',
     'X-Requested-With': 'XMLHttpRequest',
-    # 'cookie':
+    'cookie':'SINAGLOBAL=8396480745870.702.1629344875926; UOR=,,login.sina.com.cn; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WWPa.-0RzXGeWKl81m.yj8a5JpX5KMhUgL.FoqcS0qES0z7SKq2dJLoI7yzqPUuPfUad7tt; ALF=1670481023; SSOLoginState=1638945023; SCF=AsYu0FpoLKy28dB8QVglCVg3nqDJ3fgOngVhRvDIHijOGdmdWuxrtdlfmeJ6ajV-fDIsdtvSbp-YhTVX2PUSiFQ.; SUB=_2A25MtCFQDeRhGeBI7FQT9yzMzjqIHXVvwBWYrDV8PUNbmtB-LRL1kW9NRmAOvxXtz52eUlLfUG6CJ594Ub5YgL5z; XSRF-TOKEN=NTPFVr3hm1ziIC8gW6z3vArH; _s_tentry=weibo.com; Apache=3268797215588.175.1638960794186; ULV=1638960794215:4:2:1:3268797215588.175.1638960794186:1638346355970; WBPSESS=2EZTIvKcOVdUgDai4s3weNw02S4fHWjFYA46P7jXGxAkjrvvv92QqZuyz_mkbj5S0V-5C4DERelQ7Zo0DV7DwxjmhD3_doMnKFDYBWwQYrdgoZM8X0mzSys4aDNGQlcUbL1HQOcSDBrjFMvDypOWWg=='
 }
 
 # Enable or disable downloader middlewares
