@@ -14,7 +14,7 @@ class MblogSpider(Spider):
         # 通过用户id搜索
         def init_url_by_user_id():
             # crawl mblogs post by users
-            user_ids = ['1699432410']
+            user_ids = ['2696049583','wuxijiaojing']
             urls = [f'{self.base_url}containerid=107603{user_id}&page=1' for user_id in user_ids]
             return urls
         
@@ -32,8 +32,8 @@ class MblogSpider(Spider):
         js = json.loads(response.text)
         page_num = int(response.url.split('=')[-1])
         # 设定采集的时间段
-        date_start = datetime.strptime("2019-12-01", '%Y-%m-%d')
-        date_end = datetime.strptime("2021-4-6", '%Y-%m-%d')
+        date_start = datetime.strptime("2019-10-10", '%Y-%m-%d')
+        date_end = datetime.strptime("2019-10-31", '%Y-%m-%d')
         if js['ok']:
             weibos = js['data']['cards']
             # # if init url by search
