@@ -10,20 +10,18 @@ from scrapy.utils.response import response_status_message
 from scrapy import signals
 import time
 
-# class IPProxyMiddleware(object):
+class IPProxyMiddleware(object):
+    def fetch_proxy(self):
+        '183.236.232.160:8080'
+        pass
+    def process_request(self, request, spider):
+        proxy_data = self.fetch_proxy()
+            if proxy_data:
+                current_proxy = proxy_data
+                spider.logger.debug(f"current proxy:{current_proxy}")
+                request.meta['proxy'] = current_proxy
 
-#     def fetch_proxy(self):
-#         # You need to rewrite this function if you want to add proxy pool
-#         # the function should return a ip in the format of "ip:port" like "12.34.1.4:9090"
-#         pass
-
-#     def process_request(self, request, spider):
-#         proxy_data = self.fetch_proxy()
-#         if proxy_data:
-#             current_proxy = proxy_data
-#             spider.logger.debug(f"current proxy:{current_proxy}")
-#             request.meta['proxy'] = current_proxy
-
+            
 class TooManyRequestsRetryMiddleware(RetryMiddleware):
 
     def __init__(self, crawler):
